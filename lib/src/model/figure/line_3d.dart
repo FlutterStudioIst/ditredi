@@ -2,7 +2,6 @@ import 'dart:math';
 import 'dart:ui';
 
 import 'package:ditredi/ditredi.dart';
-import 'package:ditredi/src/painter/model/line_3d_painter.dart';
 import 'package:vector_math/vector_math_64.dart';
 
 /// A 3D line.

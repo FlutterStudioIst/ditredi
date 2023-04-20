@@ -18,6 +18,11 @@ export 'package:ditredi/src/model/vertices/poly_line3.dart';
 export 'package:ditredi/src/parser/csv_parser.dart';
 export 'package:ditredi/src/parser/obj_parser.dart';
 export 'package:ditredi/src/controller/ditredi_controller.dart';
+export 'package:ditredi/src/painter/model/face_3d_painter.dart';
+export 'package:ditredi/src/painter/model/group_3d_painter.dart';
+export 'package:ditredi/src/painter/model/line_3d_painter.dart';
+export 'package:ditredi/src/painter/model/model_3d_painter.dart';
+export 'package:ditredi/src/painter/model/point_3d_painter.dart';
 
 /// A widget that displays a 3D objects.
 class DiTreDi extends StatelessWidget {
