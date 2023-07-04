@@ -5,7 +5,6 @@ import 'dart:ui';
 
 import 'package:collection/collection.dart';
 import 'package:ditredi/ditredi.dart';
-import 'package:ditredi/src/painter/model/model_3d_painter.dart';
 import 'package:flutter/widgets.dart';
 import 'package:vector_math/vector_math_64.dart';
 

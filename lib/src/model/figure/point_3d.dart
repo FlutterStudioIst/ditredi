@@ -1,7 +1,6 @@
 import 'dart:ui';
 
 import 'package:ditredi/ditredi.dart';
-import 'package:ditredi/src/painter/model/point_3d_painter.dart';
 import 'package:vector_math/vector_math_64.dart';
 
 /// A point.

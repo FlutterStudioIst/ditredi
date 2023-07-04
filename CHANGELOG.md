@@ -1,3 +1,7 @@
+## 1.0.4
+
+* Export custom painter mixin for custom drawing behaviour.
+
 ## 1.0.3
 
 * Read alpha channel from mtl file.

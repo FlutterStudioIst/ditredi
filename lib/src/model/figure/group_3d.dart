@@ -1,5 +1,4 @@
 import 'package:ditredi/ditredi.dart';
-import 'package:ditredi/src/painter/model/group_3d_painter.dart';
 import 'package:vector_math/vector_math_64.dart';
 
 /// A group of 3D objects.
