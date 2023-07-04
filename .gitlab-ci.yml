@@ -47,7 +47,7 @@ build:example:
     - .mr-job-template
     - .with-flutter-pub-cache
   script:
-    - flutter format --set-exit-if-changed .
+    - dart format --set-exit-if-changed .
     - flutter pub get
     - flutter analyze --no-fatal-infos .
     - flutter test
