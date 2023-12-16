@@ -92,10 +92,22 @@ controller.update(rotationY: 30, rotationX: 30);
 
 ![Cube3D](test/paint/golden/cube/rotated.png)
 
-To handle input gestures use `GestureDetector` or `DiTreDiDraggable`:
+To handle input gestures use `GestureDetector`, `DiTreDiDraggable`, or `DiTreDiAlternativeDraggable`:
 
 ```dart
+// stable camera, view clamping
 DiTreDiDraggable(
+    controller: controller,
+    child: DiTreDi(
+        figures: [Cube3D(1, vector.Vector3(0, 0, 0))],
+        controller: controller,
+    ),
+);
+```
+
+```dart
+// dyanmic camera, no clamping
+DiTreDiAlternativeDraggable(
     controller: controller,
     child: DiTreDi(
         figures: [Cube3D(1, vector.Vector3(0, 0, 0))],

@@ -1,3 +1,7 @@
+## 2.0.1
+
+* Added `DiTreDiAlternativeDraggable` - controller with more natural gestures (by Jonathan Godbout [@jon.godbout])
+
 ## 2.0.0
 
 * Flutter 3.10.+ support.
