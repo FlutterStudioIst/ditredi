@@ -40,7 +40,7 @@ class _MyAppState extends State<MyApp> {
             children: [
               if (_displayMode == DisplayMode.cubes)
                 Expanded(
-                  child: DiTreDiAlternativeDraggable(
+                  child: DiTreDiDraggable(
                     controller: _controller,
                     child: DiTreDi(
                       figures: _cubes.toList(),

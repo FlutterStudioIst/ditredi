@@ -127,15 +127,19 @@ class CanvasModelPainter extends CustomPainter implements PaintViewPort {
   }
 
   void _drawFlat(Canvas canvas) {
+    final vertices = Vertices.raw(
+      VertexMode.triangles,
+      _verticesToDraw,
+      colors: _colorsToDraw,
+    );
+
     canvas.drawVertices(
-      Vertices.raw(
-        VertexMode.triangles,
-        _verticesToDraw,
-        colors: _colorsToDraw,
-      ),
+      vertices,
       BlendMode.dst,
       _vPaint,
     );
+
+    vertices.dispose();
   }
 
   void _drawWithZIndex(Canvas canvas) {
@@ -165,15 +169,19 @@ class CanvasModelPainter extends CustomPainter implements PaintViewPort {
       colorCounter += 3;
     }
 
+    final vertices = Vertices.raw(
+      VertexMode.triangles,
+      _verticesBuffer,
+      colors: _colorsBuffer,
+    );
+
     canvas.drawVertices(
-      Vertices.raw(
-        VertexMode.triangles,
-        _verticesBuffer,
-        colors: _colorsBuffer,
-      ),
+      vertices,
       BlendMode.dst,
       _vPaint,
     );
+
+    vertices.dispose();
   }
 
   void _setupBounds(List<Model3D<dynamic>> figures, Aabb3? bounds) {

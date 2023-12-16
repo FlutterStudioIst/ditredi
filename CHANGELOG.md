@@ -1,3 +1,7 @@
+## 2.0.2
+
+* Fix OOM error - dispose vertices after drawing (https://github.com/flutter/flutter/issues/54762#issuecomment-1232269284)
+
 ## 2.0.1
 
 * Added `DiTreDiAlternativeDraggable` - controller with more natural gestures (by Jonathan Godbout [@jon.godbout])
